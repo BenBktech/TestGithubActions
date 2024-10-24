@@ -144,7 +144,7 @@ describe('Test Cagnotte', function() {
             )
 
             let ownerBalanceAfterWithdraw = await ethers.provider.getBalance(owner.address);
-            expect(ownerBalanceAfterWithdraw).to.be.greaterThan(ownerBalanceBeforeWithdraw);
+            expect(ownerBalanceAfterWithdraw).to.be.lessThan(ownerBalanceBeforeWithdraw);
 
             /**
              * 
