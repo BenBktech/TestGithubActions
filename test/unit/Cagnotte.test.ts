@@ -127,7 +127,7 @@ describe('Test Cagnotte', function() {
             let { cagnotte, goal, owner, addr1, addr2, addr3 } = await loadFixture(deployCagnotteEthersGivenGoalNotReachedFixture);
             await expect(cagnotte.withdraw()).to.be.revertedWith('Goal not reached');
         })
-
+        //Comm
         it('should withdraw if the goal is reached and if it is the owner who tries to withdraw', async function() {
             let { cagnotte, goal, owner, addr1, addr2, addr3 } = await loadFixture(deployCagnotteEthersGivenGoalIsReachedFixture);
             let ownerBalanceBeforeWithdraw = await ethers.provider.getBalance(owner.address);
