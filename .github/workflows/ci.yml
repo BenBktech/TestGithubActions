@@ -5,7 +5,7 @@ name: Test Suite
 on:
   push:
     branches:
-      - '*'  # Déclenche le workflow sur tous les push, quelle que soit la branche (dev, feature, main, etc.)
+      - 'main'  # Déclenche le workflow sur tous les push, quelle que soit la branche (dev, feature, main, etc.)
 
 # Définition des jobs à exécuter dans ce workflow
 jobs:

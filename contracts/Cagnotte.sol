@@ -7,7 +7,7 @@ contract Cagnotte is Ownable {
     uint256 public goal;
 
     mapping(address => uint256) public given;
-
+    // :)
     event Deposit(address indexed depositor, uint256 amount);
     event Withdrawal(address indexed withdrawer, uint256 amount);
 
